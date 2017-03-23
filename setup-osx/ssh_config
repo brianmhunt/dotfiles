@@ -1,0 +1,17 @@
+
+Host *
+   ForwardAgent yes
+   ForwardX11 no
+   Compression no
+   PasswordAuthentication yes
+   Protocol 2
+   VisualHostKey yes
+
+
+   # Recommendations by Mosaic
+   #HostKeyAlgorithms ssh-ed25519-cert-v01@openssh.com,ssh-ed25519,ssh-rsa-cert-v01@openssh.com,ssh-rsa-cert-v00@openssh.com
+   #Ciphers           chacha20-poly1305@openssh.com,aes256-gcm@openssh.com
+   #MACs              hmac-sha2-512-etm@openssh.com,hmac-sha2-256-etm@openssh.com,umac-128-etm@openssh.com
+   #KexAlgorithms     curve25519-sha256@libssh.org,diffie-hellman-group-exchange-sha256
+
+
