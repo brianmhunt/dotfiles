@@ -1,0 +1,33 @@
+[user]
+	name = Brian M Hunt
+	email = bmh@tko.io
+	signingkey = 3F33B0B6
+[push]
+	default = simple
+;[pager]
+;	diff = diff-so-fancy | less --tabs=1,5 -RFX
+;	show = diff-so-fancy | less --tabs=1,5 -RFX
+[commit]
+ 	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[gpg]
+	program = /usr/local/bin/gpg
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustexitcode = true
+[merge]
+	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+  tool = icdiff
+[difftool "icdiff"]
+  cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
+
