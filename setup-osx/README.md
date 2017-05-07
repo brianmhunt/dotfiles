@@ -20,3 +20,15 @@ Steps:
  $ ./git.sh
  $ ./gcloud.sh
  $ ./context.sh
+
+
+Add to config.cson for atom:
+
+ignoredNames: [
+      ".git"
+      ".DS_store"
+      ".pyc"
+      "**/node_modules/**"
+      "**/.git/**"
+]
+
