@@ -1,6 +1,6 @@
 #!/bin/sh
 
-brew cask install dropbox iterm2 slack mactex google-cloud-sdk gpg-tools visual-studio-code
+brew cask install dropbox iterm2 slack mactex google-cloud-sdk gpg-suite visual-studio-code
 
 # Extras spotify telegram tower atom firefox mactracker sublime-text transmit dash vmware-fusion monity-helper
 brew tap caskroom/versions
