@@ -1,0 +1,9 @@
+alefragnani.Bookmarks
+chenxsan.vscode-standardjs
+EditorConfig.EditorConfig
+infarkt.css-to-jss
+ms-python.python
+PeterJausovec.vscode-docker
+toba.vsfire
+WallabyJs.wallaby-vscode
+YoshinoriN.current-file-path
