@@ -7,3 +7,4 @@
 5. $ chsh (to /usr/local/bin/fish)
 6. run fish.txt commands
 7. npm i -g `cat npm.txt`
+brew tap homebrew/cask-fonts
