@@ -1,0 +1,9 @@
+
+1. install brew
+2. $ brew tap homebrew/cask-versions
+2. $ brew install `cat brews.txt`
+3. $ brew cask install `cat casks.txt`
+4. $ echo /usr/local/bin/fish >> /etc/shells
+5. $ chsh (to /usr/local/bin/fish)
+6. run fish.txt commands
+7. npm i -g `cat npm.txt`

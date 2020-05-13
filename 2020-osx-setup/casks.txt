@@ -1,0 +1,13 @@
+dropbox
+slack
+google-cloud-sdk
+gpg-suite
+visual-studio-code
+1password
+google-chrome-beta
+chrome-devtools
+brave-browser
+dash
+alfred
+zoomus
+iterm2

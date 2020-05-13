@@ -1,0 +1,16 @@
+fish
+gdbm
+gettext
+git
+httpie
+libidn2
+libunistring
+openssl@1.1
+pcre2
+pinentry-mac
+python@3.8
+readline
+sqlite
+wget
+xz
+n

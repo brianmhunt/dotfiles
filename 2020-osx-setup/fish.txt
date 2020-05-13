@@ -1,0 +1,5 @@
+
+set -Ux N_PREFIX ~/.local/node
+
+set -U fish_user_paths ~/.local/node/bin $fish_user_paths
+
