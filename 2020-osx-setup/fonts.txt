@@ -1,3 +1,5 @@
 font-jetbrainsmono-nerd-font
 font-consolas-for-powerline
 font-firacode-nerd-font
+font-hasklig
+font-monoid-nerd-font
