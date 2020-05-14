@@ -14,3 +14,5 @@ sqlite
 wget
 xz
 n
+mas
+nordvpn
