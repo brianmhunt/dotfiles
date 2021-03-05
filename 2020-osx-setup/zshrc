@@ -1,6 +1,5 @@
 
 
-eval "$(starship init zsh)"
 
 # The following lines were added by compinstall
 
@@ -30,3 +29,8 @@ source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
 alias ll='ls -la'
 alias gst='git status --porcelain'
+
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+
+eval "$(starship init zsh)"
