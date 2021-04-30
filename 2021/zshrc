@@ -1,0 +1,42 @@
+
+
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _expand _complete _ignored _approximate
+zstyle ':completion:*' list-colors ''
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:]}={[:upper:]}'
+zstyle ':completion:*' squeeze-slashes true
+zstyle :compinstall filename '/Users/brianhunt/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
+
+
+GCLOUD_ROOT=`gcloud info --format="value(installation.sdk_root)"`
+export PATH=$PATH:$GCLOUD_ROOT/bin
+
+source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
+source "$GCLOUD_ROOT/latest/google-cloud-sdk/completion.zsh.inc"
+source "$GCLOUD_ROOT/latest/google-cloud-sdk/path.zsh.inc"
+
+alias ll='ls -la'
+alias gst='git status --porcelain'
+
+bindkey '[C' forward-word
+bindkey '[D' backward-word
+
+eval "$(starship init zsh)"
