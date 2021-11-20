@@ -26,8 +26,7 @@ if type brew &>/dev/null; then
 fi
 
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
+source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 
 alias ll='ls -la'
 alias gst='git status --porcelain'
